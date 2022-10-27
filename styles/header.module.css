@@ -1,0 +1,49 @@
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(../public/img/header.jpg);
+    padding: 5rem 0;
+    background-position: center; /*imagen centrada*/
+    background-size: cover; /*toma todo el ancho de la pantalla*/
+}
+
+
+/*EN ESTE EJEMPLO UTILIZA LOS MEDIA QUERY PARA DAR ESTILO A DISPOSITIVOS GRANDES*/
+.barra { /*este estilo centra el header en dispositivos pequeños*/
+    display: flex;
+    flex-direction: column; /*para que se alinen de arriba hacia abajo*/
+    align-items: center; /*centramos elementos*/
+}
+
+@media (min-width: 768px) { /*colocamos media query para que la barra vaya de izquierda a derecha */
+    .barra {  /*este estilo sirve para pantallas grandes*/
+        flex-direction: row;
+        justify-content: space-between; /*para que quede el logo del lado izquierdo y la nav del derecho*/
+    }
+}
+
+.navegacion {
+    margin-top: 5rem;
+    display: flex; /*Display flex para habililtar el gap*/
+    gap: 2rem;     /*Utilizo el gap para separar lo elementos del nav inicio, nosotros blog y tienda*/
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        margin: 0;
+    }
+}
+
+.navegacion a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5rem; /* damos espacio al background para que no quede justo cuando se pinta*/
+    transition-property: backgruond-color; /*Transicion al hover*/
+    transition-duration: 300ms;
+}
+
+.navegacion a:hover,
+.active {   /*La clase active es para detectar en que pagina estamos y deja el fondo*/
+    background-color: var(--primary);
+}

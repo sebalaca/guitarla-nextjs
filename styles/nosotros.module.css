@@ -1,0 +1,15 @@
+.contenido {
+    display: grid;
+    gap: 4rem;  /*Separa el bloque hacia abajo*/
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: repeat(2, 1fr); /*Creamos dos columnas de 1 fraccion*/
+        align-items: center; /*Centramos el contenido de las columnas*/
+    }
+}
+
+.text {
+    text-align: justify;
+}
