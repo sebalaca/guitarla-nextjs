@@ -1,3 +1,8 @@
+
+# GuitarLA - Online Guitar Store
+
+guitarLA is an App that simulates a virtual guitar store, with its products, blog and shopping cart.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
