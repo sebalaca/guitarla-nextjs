@@ -23,6 +23,7 @@
 .navegacion {
     margin-top: 5rem;
     display: flex; /*Display flex para habililtar el gap*/
+    align-items: center;
     gap: 2rem;     /*Utilizo el gap para separar lo elementos del nav inicio, nosotros blog y tienda*/
 }
 
